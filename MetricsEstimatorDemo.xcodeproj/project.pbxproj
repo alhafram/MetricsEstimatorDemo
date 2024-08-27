@@ -11,6 +11,7 @@
 		503F1C272C7CC96B00F9C3F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F1C262C7CC96B00F9C3F3 /* ContentView.swift */; };
 		503F1C292C7CC96C00F9C3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */; };
 		503F1C2C2C7CC96C00F9C3F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */; };
+		503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		503F1C262C7CC96B00F9C3F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		503F1C332C7CCA5600F9C3F3 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
+		503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageUsage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 			children = (
 				503F1C232C7CC96B00F9C3F3 /* MetricsEstimatorDemo */,
 				503F1C222C7CC96B00F9C3F3 /* Products */,
+				503F1C342C7CCA6D00F9C3F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +55,10 @@
 		503F1C232C7CC96B00F9C3F3 /* MetricsEstimatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				503F1C322C7CCA3300F9C3F3 /* Packages */,
 				503F1C242C7CC96B00F9C3F3 /* MetricsEstimatorDemoApp.swift */,
 				503F1C262C7CC96B00F9C3F3 /* ContentView.swift */,
+				503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */,
 				503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */,
 				503F1C2A2C7CC96C00F9C3F3 /* Preview Content */,
 			);
@@ -65,6 +71,21 @@
 				503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		503F1C322C7CCA3300F9C3F3 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				503F1C332C7CCA5600F9C3F3 /* LocalPackage */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		503F1C342C7CCA6D00F9C3F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,8 @@
 			dependencies = (
 			);
 			name = MetricsEstimatorDemo;
+			packageProductDependencies = (
+			);
 			productName = MetricsEstimatorDemo;
 			productReference = 503F1C212C7CC96B00F9C3F3 /* MetricsEstimatorDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +162,7 @@
 			files = (
 				503F1C272C7CC96B00F9C3F3 /* ContentView.swift in Sources */,
 				503F1C252C7CC96B00F9C3F3 /* MetricsEstimatorDemoApp.swift in Sources */,
+				503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -278,8 +302,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +331,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +356,7 @@
 				503F1C2E2C7CC96C00F9C3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		503F1C2F2C7CC96C00F9C3F3 /* Build configuration list for PBXNativeTarget "MetricsEstimatorDemo" */ = {
 			isa = XCConfigurationList;
@@ -341,7 +365,7 @@
 				503F1C312C7CC96C00F9C3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
