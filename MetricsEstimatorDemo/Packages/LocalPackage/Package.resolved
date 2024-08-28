@@ -1,13 +1,22 @@
 {
-  "originHash" : "a49c4b51fcf865aa27c4358b8a5a3f23f577f2a394814fb93fe9141bc2aa3f3d",
+  "originHash" : "2e4b32582d86d76911f9b2a40cea3baa9699e4f7a43aa7cca3b465c073bc7ee3",
   "pins" : [
     {
       "identity" : "testpackage1",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alhafram/TestPackage1.git",
       "state" : {
-        "revision" : "9af349c0e86dea12e87b38c1372bd9d097287aaf",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "9af349c0e86dea12e87b38c1372bd9d097287aaf"
+      }
+    },
+    {
+      "identity" : "testpackage2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alhafram/TestPackage2.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c2cf829853d7d64ce1d189b042114eab0a680652"
       }
     }
   ],
