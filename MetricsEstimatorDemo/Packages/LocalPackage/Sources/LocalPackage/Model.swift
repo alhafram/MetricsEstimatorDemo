@@ -1,26 +1,41 @@
 import TestPackage1
 
 public struct StructModel {
+    public let object: TestPackage1Struct
 
-    public init() { }
+    public init() {
+        object = TestPackage1Struct()
+    }
 }
 
 public enum EnumModel {
-
+    case value(TestPackage1Enum)
 }
 
 open class OpenClassModel {
-    public init() { }
+    public let object: TestPackage1OpenClass
+
+    public init() {
+        object = TestPackage1OpenClass()
+    }
 }
 
 public class PublicClassModel {
-    public init() { }
+    public let object: TestPackage1PublicClass
+
+    public init() {
+        object = TestPackage1PublicClass()
+    }
 }
 
 public actor ActorModel {
-    public init() { }
+    public let object: TestPackage1Actor
+    
+    public init() {
+        object = TestPackage1Actor()
+    }
 }
 
-public protocol ProtocolModel {
-    
+public protocol ProtocolModel: TestPackage1Protocol {
+
 }

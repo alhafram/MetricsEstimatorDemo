@@ -12,6 +12,7 @@
 		503F1C292C7CC96C00F9C3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */; };
 		503F1C2C2C7CC96C00F9C3F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */; };
 		503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */; };
+		5069CBE72C7EF816006233D4 /* LocalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5069CBE62C7EF816006233D4 /* LocalPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5069CBE72C7EF816006233D4 /* LocalPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,7 @@
 			);
 			name = MetricsEstimatorDemo;
 			packageProductDependencies = (
+				5069CBE62C7EF816006233D4 /* LocalPackage */,
 			);
 			productName = MetricsEstimatorDemo;
 			productReference = 503F1C212C7CC96B00F9C3F3 /* MetricsEstimatorDemo.app */;
@@ -368,6 +371,13 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5069CBE62C7EF816006233D4 /* LocalPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocalPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 503F1C192C7CC96B00F9C3F3 /* Project object */;
 }
