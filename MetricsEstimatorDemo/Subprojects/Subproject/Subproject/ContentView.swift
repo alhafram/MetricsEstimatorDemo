@@ -1,13 +1,18 @@
 //
 //  ContentView.swift
-//  MetricsEstimatorDemo
+//  Subproject
 //
-//  Created by Albert on 26.08.2024.
+//  Created by Albert on 28.08.2024.
 //
 
 import SwiftUI
+import TestPackage1
 
 struct ContentView: View {
+
+    let object = TestPackage1OpenClass()
+    let object2 = TestPackage1Struct()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,7 +21,8 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            test()
+            print(object)
+            print(object2)
         }
     }
 }

@@ -7,7 +7,11 @@
 
 import Foundation
 import LocalPackage
+import Subproject2
 
 func test() {
-    
+    let a = Subproject2OpenClass()
+    let b = Subproject2Enum.testCase
+//
+    print(a, b)
 }

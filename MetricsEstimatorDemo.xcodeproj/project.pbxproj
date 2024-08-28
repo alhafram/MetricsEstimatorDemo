@@ -12,8 +12,19 @@
 		503F1C292C7CC96C00F9C3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */; };
 		503F1C2C2C7CC96C00F9C3F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */; };
 		503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */; };
-		5069CBE72C7EF816006233D4 /* LocalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5069CBE62C7EF816006233D4 /* LocalPackage */; };
+		5069CC552C7F1C40006233D4 /* Subproject2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069CC4F2C7F1B90006233D4 /* Subproject2.framework */; };
+		5069CC6B2C7F21A5006233D4 /* LocalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5069CC6A2C7F21A5006233D4 /* LocalPackage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5069CC4E2C7F1B90006233D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5069CC402C7F1B90006233D4;
+			remoteInfo = Subproject2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		503F1C212C7CC96B00F9C3F3 /* MetricsEstimatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricsEstimatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +34,7 @@
 		503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		503F1C332C7CCA5600F9C3F3 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
 		503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageUsage.swift; sourceTree = "<group>"; };
+		5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subproject2.xcodeproj; path = MetricsEstimatorDemo/Subprojects/Subproject2/Subproject2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5069CBE72C7EF816006233D4 /* LocalPackage in Frameworks */,
+				5069CC552C7F1C40006233D4 /* Subproject2.framework in Frameworks */,
+				5069CC6B2C7F21A5006233D4 /* LocalPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 		503F1C182C7CC96B00F9C3F3 = {
 			isa = PBXGroup;
 			children = (
+				503F1C322C7CCA3300F9C3F3 /* Packages */,
+				5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */,
 				503F1C232C7CC96B00F9C3F3 /* MetricsEstimatorDemo */,
 				503F1C222C7CC96B00F9C3F3 /* Products */,
 				503F1C342C7CCA6D00F9C3F3 /* Frameworks */,
@@ -57,7 +72,6 @@
 		503F1C232C7CC96B00F9C3F3 /* MetricsEstimatorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				503F1C322C7CCA3300F9C3F3 /* Packages */,
 				503F1C242C7CC96B00F9C3F3 /* MetricsEstimatorDemoApp.swift */,
 				503F1C262C7CC96B00F9C3F3 /* ContentView.swift */,
 				503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */,
@@ -90,6 +104,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5069CC4B2C7F1B90006233D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5069CC4F2C7F1B90006233D4 /* Subproject2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,7 +129,7 @@
 			);
 			name = MetricsEstimatorDemo;
 			packageProductDependencies = (
-				5069CBE62C7EF816006233D4 /* LocalPackage */,
+				5069CC6A2C7F21A5006233D4 /* LocalPackage */,
 			);
 			productName = MetricsEstimatorDemo;
 			productReference = 503F1C212C7CC96B00F9C3F3 /* MetricsEstimatorDemo.app */;
@@ -139,12 +161,28 @@
 			mainGroup = 503F1C182C7CC96B00F9C3F3;
 			productRefGroup = 503F1C222C7CC96B00F9C3F3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5069CC4B2C7F1B90006233D4 /* Products */;
+					ProjectRef = 5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				503F1C202C7CC96B00F9C3F3 /* MetricsEstimatorDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5069CC4F2C7F1B90006233D4 /* Subproject2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Subproject2.framework;
+			remoteRef = 5069CC4E2C7F1B90006233D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		503F1C1F2C7CC96B00F9C3F3 /* Resources */ = {
@@ -296,11 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetricsEstimatorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = TJ2C3F25SU;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,9 +354,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.features.test.MetricsEstimatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,11 +369,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetricsEstimatorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = TJ2C3F25SU;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -343,9 +389,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.features.test.MetricsEstimatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -373,7 +423,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5069CBE62C7EF816006233D4 /* LocalPackage */ = {
+		5069CC6A2C7F21A5006233D4 /* LocalPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LocalPackage;
 		};
