@@ -12,14 +12,14 @@
 		503F1C292C7CC96C00F9C3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C282C7CC96C00F9C3F3 /* Assets.xcassets */; };
 		503F1C2C2C7CC96C00F9C3F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */; };
 		503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */; };
-		5069CC552C7F1C40006233D4 /* Subproject2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069CC4F2C7F1B90006233D4 /* Subproject2.framework */; };
 		5069CC6B2C7F21A5006233D4 /* LocalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5069CC6A2C7F21A5006233D4 /* LocalPackage */; };
+		5069CC7C2C7F2632006233D4 /* Subproject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5069CC732C7F2632006233D4 /* Subproject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5069CC4E2C7F1B90006233D4 /* PBXContainerItemProxy */ = {
+		5069CC7A2C7F2632006233D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */;
+			containerPortal = 5069CC742C7F2632006233D4 /* Subproject2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5069CC402C7F1B90006233D4;
 			remoteInfo = Subproject2;
@@ -34,7 +34,9 @@
 		503F1C2B2C7CC96C00F9C3F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		503F1C332C7CCA5600F9C3F3 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
 		503F1C372C7CCB1A00F9C3F3 /* PackageUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageUsage.swift; sourceTree = "<group>"; };
-		5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subproject2.xcodeproj; path = MetricsEstimatorDemo/Subprojects/Subproject2/Subproject2.xcodeproj; sourceTree = "<group>"; };
+		5069CC702C7F2632006233D4 /* Subproject2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subproject2.h; sourceTree = "<group>"; };
+		5069CC732C7F2632006233D4 /* Subproject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subproject.swift; sourceTree = "<group>"; };
+		5069CC742C7F2632006233D4 /* Subproject2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Subproject2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5069CC552C7F1C40006233D4 /* Subproject2.framework in Frameworks */,
 				5069CC6B2C7F21A5006233D4 /* LocalPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,8 +54,8 @@
 		503F1C182C7CC96B00F9C3F3 = {
 			isa = PBXGroup;
 			children = (
+				5069CC762C7F2632006233D4 /* Subprojects */,
 				503F1C322C7CCA3300F9C3F3 /* Packages */,
-				5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */,
 				503F1C232C7CC96B00F9C3F3 /* MetricsEstimatorDemo */,
 				503F1C222C7CC96B00F9C3F3 /* Products */,
 				503F1C342C7CCA6D00F9C3F3 /* Frameworks */,
@@ -104,10 +105,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5069CC4B2C7F1B90006233D4 /* Products */ = {
+		5069CC712C7F2632006233D4 /* Subproject2 */ = {
 			isa = PBXGroup;
 			children = (
-				5069CC4F2C7F1B90006233D4 /* Subproject2.framework */,
+				5069CC702C7F2632006233D4 /* Subproject2.h */,
+			);
+			path = Subproject2;
+			sourceTree = "<group>";
+		};
+		5069CC722C7F2632006233D4 /* Subproject2Demo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subproject2Demo;
+			sourceTree = "<group>";
+		};
+		5069CC752C7F2632006233D4 /* Subproject2 */ = {
+			isa = PBXGroup;
+			children = (
+				5069CC712C7F2632006233D4 /* Subproject2 */,
+				5069CC722C7F2632006233D4 /* Subproject2Demo */,
+				5069CC732C7F2632006233D4 /* Subproject.swift */,
+				5069CC742C7F2632006233D4 /* Subproject2.xcodeproj */,
+			);
+			path = Subproject2;
+			sourceTree = "<group>";
+		};
+		5069CC762C7F2632006233D4 /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+				5069CC752C7F2632006233D4 /* Subproject2 */,
+			);
+			path = Subprojects;
+			sourceTree = "<group>";
+		};
+		5069CC772C7F2632006233D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5069CC7B2C7F2632006233D4 /* Subproject2.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,8 +198,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5069CC4B2C7F1B90006233D4 /* Products */;
-					ProjectRef = 5069CC4A2C7F1B90006233D4 /* Subproject2.xcodeproj */;
+					ProductGroup = 5069CC772C7F2632006233D4 /* Products */;
+					ProjectRef = 5069CC742C7F2632006233D4 /* Subproject2.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -175,11 +210,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5069CC4F2C7F1B90006233D4 /* Subproject2.framework */ = {
+		5069CC7B2C7F2632006233D4 /* Subproject2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Subproject2.framework;
-			remoteRef = 5069CC4E2C7F1B90006233D4 /* PBXContainerItemProxy */;
+			remoteRef = 5069CC7A2C7F2632006233D4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -201,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5069CC7C2C7F2632006233D4 /* Subproject.swift in Sources */,
 				503F1C272C7CC96B00F9C3F3 /* ContentView.swift in Sources */,
 				503F1C252C7CC96B00F9C3F3 /* MetricsEstimatorDemoApp.swift in Sources */,
 				503F1C382C7CCB1A00F9C3F3 /* PackageUsage.swift in Sources */,

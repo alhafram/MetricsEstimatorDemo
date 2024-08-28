@@ -24,7 +24,7 @@ let package = Package(
             name: "LocalPackage",
             dependencies: [
                 .product(name: "TestPackage1", package: "TestPackage1"),
-                .product(name: "TestPackage2", package: "TestPackage2"),
+                .product(name: "TestPackage2", package: "TestPackage2")
             ]
         )
     ]

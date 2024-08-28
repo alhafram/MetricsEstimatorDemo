@@ -1,0 +1,15 @@
+{
+  "originHash" : "9d3e5e5b3bfcb8ee441b31d23055f7225095a0a17c96df702a5e4d6a81048238",
+  "pins" : [
+    {
+      "identity" : "testpackage1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alhafram/TestPackage1.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f990a2dc3d86606beaeb53c72320b42e8992f609"
+      }
+    }
+  ],
+  "version" : 3
+}

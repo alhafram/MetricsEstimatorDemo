@@ -1,10 +1,13 @@
 import TestPackage1
+import TestPackage2
 
 public struct StructModel {
     public let object: TestPackage1Struct
+    public let object2: TestPackage2Enum
 
     public init() {
         object = TestPackage1Struct()
+        object2 = TestPackage2Enum.testCase
     }
 }
 
